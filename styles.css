@@ -88,6 +88,37 @@ form:hover {
   opacity: 0.8;
 }
 
+.hamburger {
+  cursor: pointer;
+  display: block;
+  z-index: 4;
+  width: 30px;
+  height: 21px;
+  position: fixed;
+  top: 10px;
+  right: 30px;
+}
+
+.line {
+  /* position: absolute; */
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: black;
+  border-radius: 10px;
+  margin: 7px;
+}
+.none {
+  cursor: pointer;
+  background: blue;
+  opacity: 0;
+  position: fixed;
+    top: 8px;
+    right:18px;
+  width: 40px;
+  height: 40px;
+  z-index: 5;
+}
 
 
 
@@ -230,6 +261,15 @@ body {
 
 /* 通常デザイン↑ */
 @media (min-width:765px) {
+
+  .white {
+    height: 60px;
+  }
+  .green {
+    height: 60px;
+  }
+
+
   .B {
     display: none;
   }
@@ -345,6 +385,11 @@ body {
 
   .white {
     position: fixed;
+    display: none;
+  }
+
+
+  .hamburger {
     display: none;
   }
 
